@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub仓库源码备份</title>
+<link rel="stylesheet" href="style.css">
+<main>
+  <p class="eyebrow">个人自用工具 · 应用说明</p>
+  <h1>GitHub仓库源码备份</h1>
+  <p>此工具由 GitHub 用户 ciaooo55 维护，用于将本人授权的 GitHub 仓库源码及完整 Git 历史备份到本人授权的 Google 云盘，方便独立保存和恢复。</p>
+  <h2>如何工作</h2>
+  <p>备份任务在 GitHub 托管的 Actions 运行器上执行。首次由本人通过 Google 官方页面授权，之后按计划生成完整快照、上传到 Google 云盘的独立文件夹，并核对上传结果。</p>
+  <p>默认每日执行，保留最近 7 个成功快照。只有新快照上传校验成功后，才将超过保留数量的旧成功快照移入云盘回收站；不清空回收站。</p>
+  <h2>Google 云盘权限</h2>
+  <p>应用请求 <code>drive.file</code> 权限，用于创建和管理本应用创建或用户明确授权的文件。备份存放在“GitHub仓库源码备份”文件夹内，不需要访问整个云盘。</p>
+  <h2>适用范围与联系</h2>
+  <p>这是个人自用的备份工具，不提供公众注册或商业备份服务。维护者及支持邮箱：<a href="mailto:g.ciaooo55@gmail.com">g.ciaooo55@gmail.com</a>。</p>
+  <p><a href="privacy.html">隐私政策：数据访问、保存、删除与撤销授权</a></p>
+</main>
+</html>

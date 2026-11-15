@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · GitHub仓库源码备份</title>
+<link rel="stylesheet" href="style.css">
+<main>
+  <p><a href="index.html">返回应用首页</a></p>
+  <h1>隐私政策</h1>
+  <p>适用应用：GitHub仓库源码备份。维护者：ciaooo55。生效日期：2026 年 11 月 15 日。</p>
+  <h2>访问哪些数据、用于什么目的</h2>
+  <p>经本人授权，工具读取授权 GitHub 账号的仓库源码、Git 历史、分支、标签、仓库元数据及 Git LFS 对象（若有），仅用于生成和验证备份。</p>
+  <p>Google 云盘采用 <code>https://www.googleapis.com/auth/drive.file</code> 权限，仅访问本应用创建或用户明确授权的文件。工具创建独立备份文件夹，上传快照，读取相关文件元数据、校验信息和本工具的完成标记，并清理超过保留数量的旧成功快照。</p>
+  <h2>数据存放及服务提供方</h2>
+  <p>备份文件保存于本人授权的 Google 云盘。任务执行期间，源码和备份文件会临时存放在 GitHub 托管的 Actions 运行器中；任务结束清理工作区。备份不作为 Actions 附件另行保存。</p>
+  <p>Google OAuth 配置及 GitHub 访问令牌保存在私有备份仓库的 GitHub Actions Secrets 中，仅在执行任务时使用，不放入公开网页、源码、备份文件或运行日志。运行记录包含任务状态及仓库名称。</p>
+  <p>数据处理依赖 GitHub 和 Google 提供其各自的托管、存储及 API 服务。本工具不出售数据，不用于广告或训练 AI，也不主动向其他第三方提供数据。服务提供方对其自身服务的数据处理，分别适用 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>及 <a href="https://policies.google.com/privacy">Google 隐私政策</a>。</p>
+  <h2>保存与删除</h2>
+  <p>默认保留最近 7 个上传校验成功的完整快照。新备份成功后，超过保留数量的旧成功快照移入 Google 云盘回收站，不自动永久删除。不完整上传可能保留，需由本人检查和清理。Google 云盘回收站仍可能占用存储空间。</p>
+  <p>本人可停用 GitHub Actions 备份任务，并在 Google 云盘中自行删除备份文件；如需永久移除，还须处理回收站。撤销授权不会自动删除已经保存的快照。</p>
+  <h2>撤销授权与联系</h2>
+  <p>本人可在 <a href="https://myaccount.google.com/connections">Google 账号的第三方连接</a>中移除此应用的授权。撤销后工具无法继续通过该授权访问云盘，新的上传和旧快照清理会停止。也可从备份仓库中删除相关 Actions Secrets，并停用定时任务。</p>
+  <p>如对数据访问、保存或删除有疑问，请联系 <a href="mailto:g.ciaooo55@gmail.com">g.ciaooo55@gmail.com</a>。</p>
+</main>
+</html>
